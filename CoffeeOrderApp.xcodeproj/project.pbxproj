@@ -13,6 +13,7 @@
 		9461EE882C144C4000669FBF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9461EE872C144C4000669FBF /* Preview Assets.xcassets */; };
 		9461EE902C14505B00669FBF /* Webservice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9461EE8F2C14505B00669FBF /* Webservice.swift */; };
 		9461EE942C1451A200669FBF /* Order.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9461EE932C1451A200669FBF /* Order.swift */; };
+		94D92FB22C145F4000E83400 /* CoffeeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94D92FB12C145F4000E83400 /* CoffeeModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +24,7 @@
 		9461EE872C144C4000669FBF /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		9461EE8F2C14505B00669FBF /* Webservice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Webservice.swift; sourceTree = "<group>"; };
 		9461EE932C1451A200669FBF /* Order.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Order.swift; sourceTree = "<group>"; };
+		94D92FB12C145F4000E83400 /* CoffeeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeeModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +87,7 @@
 			isa = PBXGroup;
 			children = (
 				9461EE932C1451A200669FBF /* Order.swift */,
+				94D92FB12C145F4000E83400 /* CoffeeModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -160,6 +163,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9461EE832C144C3F00669FBF /* ContentView.swift in Sources */,
+				94D92FB22C145F4000E83400 /* CoffeeModel.swift in Sources */,
 				9461EE812C144C3F00669FBF /* CoffeeOrderAppApp.swift in Sources */,
 				9461EE942C1451A200669FBF /* Order.swift in Sources */,
 				9461EE902C14505B00669FBF /* Webservice.swift in Sources */,
