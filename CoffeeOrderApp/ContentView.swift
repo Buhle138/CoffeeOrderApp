@@ -33,27 +33,9 @@ struct ContentView: View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView().environmentObject(CoffeeModel(webservice: Webservice()))
+        var config = Configuration()
+        
+        ContentView().environmentObject(CoffeeModel(webservice: Webservice(baseURL: config.environment.baseURL)))
     }
 }
 
-struct OrderCellView: View{
-    let order: Order
-    
-    var body: some View{
-        
-    
-        HStack{
-            VStack(alignment: .leading){
-                Text(order.name).accessibilityIdentifier("orderNameText")
-                    .bold()
-                Text("\(order.coffeeName) (\(order.size.rawValue)")
-                    .accessibilityIdentifier("CoffeeNameAndSizeText")
-                    .opacity(0.5)
-            }
-            Spacer()
-           // Text(order.total as NSNumber, formatter: NumberFormatter.currency)
-             //   .accessibilityIdentifier("CoffeePriceText")
-        }
-    }
-}
