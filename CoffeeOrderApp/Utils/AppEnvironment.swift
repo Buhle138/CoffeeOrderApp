@@ -14,14 +14,19 @@ import Foundation
 //Enpoints is where exactly are we going
 enum Endpoints {
     case allOrders
+    case placeOrder
     
     var path: String{
         switch self{
         case .allOrders:
             return "/test/orders"
+        case .placeOrder:
+            return "/test/new-order"
         }
     }
 }
+
+
 
 struct Configuration {
     lazy var environment: AppEnvironment = {
