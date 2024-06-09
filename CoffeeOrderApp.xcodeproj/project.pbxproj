@@ -18,6 +18,8 @@
 		94D92FB82C14C35600E83400 /* OrderCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94D92FB72C14C35600E83400 /* OrderCellView.swift */; };
 		94D92FBB2C158E5F00E83400 /* AppEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94D92FBA2C158E5F00E83400 /* AppEnvironment.swift */; };
 		94D92FC32C15955100E83400 /* CoffeeOrderAppE2Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94D92FC22C15955100E83400 /* CoffeeOrderAppE2Tests.swift */; };
+		94D92FCC2C160CA400E83400 /* AddCoffeeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94D92FCB2C160CA400E83400 /* AddCoffeeView.swift */; };
+		94D92FCE2C160F6E00E83400 /* View+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94D92FCD2C160F6E00E83400 /* View+Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +46,8 @@
 		94D92FBA2C158E5F00E83400 /* AppEnvironment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppEnvironment.swift; sourceTree = "<group>"; };
 		94D92FC02C15955000E83400 /* CoffeeOrderAppE2Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CoffeeOrderAppE2Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		94D92FC22C15955100E83400 /* CoffeeOrderAppE2Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeeOrderAppE2Tests.swift; sourceTree = "<group>"; };
+		94D92FCB2C160CA400E83400 /* AddCoffeeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCoffeeView.swift; sourceTree = "<group>"; };
+		94D92FCD2C160F6E00E83400 /* View+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Extensions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,6 +131,7 @@
 			isa = PBXGroup;
 			children = (
 				94D92FB42C14C28B00E83400 /* NumberFormatter+Extensions.swift */,
+				94D92FCD2C160F6E00E83400 /* View+Extensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -135,6 +140,7 @@
 			isa = PBXGroup;
 			children = (
 				94D92FB72C14C35600E83400 /* OrderCellView.swift */,
+				94D92FCB2C160CA400E83400 /* AddCoffeeView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -259,9 +265,11 @@
 				94D92FB82C14C35600E83400 /* OrderCellView.swift in Sources */,
 				94D92FB22C145F4000E83400 /* CoffeeModel.swift in Sources */,
 				94D92FB52C14C28B00E83400 /* NumberFormatter+Extensions.swift in Sources */,
+				94D92FCC2C160CA400E83400 /* AddCoffeeView.swift in Sources */,
 				9461EE812C144C3F00669FBF /* CoffeeOrderAppApp.swift in Sources */,
 				94D92FBB2C158E5F00E83400 /* AppEnvironment.swift in Sources */,
 				9461EE942C1451A200669FBF /* Order.swift in Sources */,
+				94D92FCE2C160F6E00E83400 /* View+Extensions.swift in Sources */,
 				9461EE902C14505B00669FBF /* Webservice.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

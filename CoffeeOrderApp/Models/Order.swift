@@ -7,6 +7,7 @@
 
 import Foundation
 
+//caseIterable allows us to loop through all the cases using loops when we use this CoffeeSize enum.
 enum CoffeeSize: String, Codable, CaseIterable{
     case small = "Small"
     case medium = "Medium"
