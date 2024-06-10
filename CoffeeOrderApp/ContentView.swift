@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    @State private var isPresented: Bool = false
     //Getting access to the coffee model through the environment object.
     @EnvironmentObject private var model: CoffeeModel
     
@@ -20,18 +22,32 @@ struct ContentView: View {
         
     }
     
-    var body: some View { 
-        VStack{
-            if model.orders.isEmpty{
-                Text("No orders available!").accessibilityIdentifier("noOrdersText")
-            }else{
-                List(model.orders) {order in
-                    OrderCellView(order: order)
+    var body: some View {
+        NavigationStack {
+            VStack{
+                if model.orders.isEmpty{
+                    Text("No orders available!").accessibilityIdentifier("noOrdersText")
+                }else{
+                    List(model.orders) {order in
+                        OrderCellView(order: order)
+                    }
+                }
+            }.task {
+                await populateOrders()
+            }
+            .sheet(isPresented: $isPresented, content: {
+                AddCoffeeView()
+            })
+            .toolbar{
+                ToolbarItem(placement: .navigationBarTrailing){
+                    Button("Add New Order"){
+                        //If isPresented is true then we display the add new orders in the form of a sheet. 
+                        isPresented = true
+                    }.accessibilityIdentifier("addNewOrderButton")
                 }
             }
-        }.task {
-            await populateOrders()
         }
+       
     }
 }
 
