@@ -20,6 +20,7 @@
 		94D92FC32C15955100E83400 /* CoffeeOrderAppE2Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94D92FC22C15955100E83400 /* CoffeeOrderAppE2Tests.swift */; };
 		94D92FCC2C160CA400E83400 /* AddCoffeeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94D92FCB2C160CA400E83400 /* AddCoffeeView.swift */; };
 		94D92FCE2C160F6E00E83400 /* View+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94D92FCD2C160F6E00E83400 /* View+Extensions.swift */; };
+		94D92FD02C16D7B100E83400 /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94D92FCF2C16D7B100E83400 /* String+Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +49,7 @@
 		94D92FC22C15955100E83400 /* CoffeeOrderAppE2Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeeOrderAppE2Tests.swift; sourceTree = "<group>"; };
 		94D92FCB2C160CA400E83400 /* AddCoffeeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCoffeeView.swift; sourceTree = "<group>"; };
 		94D92FCD2C160F6E00E83400 /* View+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Extensions.swift"; sourceTree = "<group>"; };
+		94D92FCF2C16D7B100E83400 /* String+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extensions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -132,6 +134,7 @@
 			children = (
 				94D92FB42C14C28B00E83400 /* NumberFormatter+Extensions.swift */,
 				94D92FCD2C160F6E00E83400 /* View+Extensions.swift */,
+				94D92FCF2C16D7B100E83400 /* String+Extensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -262,6 +265,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9461EE832C144C3F00669FBF /* ContentView.swift in Sources */,
+				94D92FD02C16D7B100E83400 /* String+Extensions.swift in Sources */,
 				94D92FB82C14C35600E83400 /* OrderCellView.swift in Sources */,
 				94D92FB22C145F4000E83400 /* CoffeeModel.swift in Sources */,
 				94D92FB52C14C28B00E83400 /* NumberFormatter+Extensions.swift in Sources */,
